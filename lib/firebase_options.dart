@@ -53,7 +53,8 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBI-4FBCOn6eAdJtJcBIL6rWXKmngEXLI8',
+    apiKey: 'api-key',
+    // apiKey: 'AIzaSyBI-4FBCOn6eAdJtJcBIL6rWXKmngEXLI8',
     appId: '1:451216176983:android:db27315a5de6cad6e9b012',
     messagingSenderId: '451216176983',
     projectId: 'taskmanagementsystem-b2468',
