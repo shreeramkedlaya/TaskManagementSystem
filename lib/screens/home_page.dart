@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:tms/components/text_helper.dart';
 import 'package:tms/widgets/constant.dart';
@@ -12,11 +14,13 @@ class HomePage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Padding(
-          padding: EdgeInsets.only(right: 8.0, left: 8.0, top: 15.0, bottom: 10.0),
+          padding:
+              EdgeInsets.only(right: 8.0, left: 8.0, top: 15.0, bottom: 10.0),
           child: Premium(),
         ),
         Container(
-            padding: const EdgeInsets.all(15.0), child: labelText('Tasks', 26, Colors.grey.shade600)
+            padding: const EdgeInsets.all(15.0),
+            child: labelText('Tasks', 26, Colors.grey.shade600)
             /*Text(
             'Tasks',
             style: TextStyle(
@@ -75,7 +79,8 @@ class _PremiumState extends State<Premium> {
                   ),
                   child: ColorFiltered(
                     colorFilter: ColorFilter.mode(
-                        const Color.fromARGB(255, 254, 254, 254).withOpacity(0.6),
+                        const Color.fromARGB(255, 254, 254, 254)
+                            .withOpacity(0.6),
                         BlendMode.srcATop),
                     child: const Icon(
                       Icons.workspace_premium_outlined,

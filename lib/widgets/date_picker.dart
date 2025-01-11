@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class DatePicker extends StatefulWidget {
@@ -31,7 +33,8 @@ class _DatePickerState extends State<DatePicker> {
             });
           },
           child: Container(
-            padding: const EdgeInsets.only(right: 10, left: 10, bottom: 10, top: 25),
+            padding:
+                const EdgeInsets.only(right: 10, left: 10, bottom: 10, top: 25),
             margin: const EdgeInsets.symmetric(horizontal: 0.5),
             decoration: BoxDecoration(
               color: selectedDay == index ? Colors.grey.withOpacity(0.3) : null,
